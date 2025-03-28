@@ -12,9 +12,9 @@ print("Scanning for malicious applications... DO NOT TERMINATE")
 
 """
 def on_exit(event_type):
-    if event_type in (0, 1, 2):  # CTRL_CLOSE_EVENT, CTRL_LOGOFF_EVENT, CTRL_SHUTDOWN_EVENT
+    if event_type in (0, 1, 2):  
         logging.info("System is shutting down or logging off.")
-        sys.exit(0)  # Ensures clean exit
+        sys.exit(0)  
     return True
     
 win32api.SetConsoleCtrlHandler(on_exit, True)
