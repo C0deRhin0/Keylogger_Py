@@ -10,6 +10,7 @@ logging.basicConfig(
 )
 print("Scanning for malicious applications... DO NOT TERMINATE")
 
+
 """
 def on_exit(event_type):
     if event_type in (0, 1, 2):  
