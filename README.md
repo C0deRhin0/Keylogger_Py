@@ -29,6 +29,6 @@ The script poses a significant **security and privacy risk**:
 ---
 
 ## Notes
-This script is for **educational and ethical research purposes only**. Unauthorized use of keyloggers **violates privacy laws** and **can lead to legal consequences**. If used in penetration testing, ensure that you have explicit permissions.
+This script is for **educational and ethical research purposes only**. Unauthorized use of keyloggers **violates privacy laws** and **can lead to legal consequences**. If used in penetration testing, ensure that you have explicit permissions from the target.
 
 Extreme caution is advised when using or modifying this code.
